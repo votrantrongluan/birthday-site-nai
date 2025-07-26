@@ -1,0 +1,69 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #fce4ec;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.title {
+    font-size: 2em;
+    margin: 20px;
+    animation: bounce 2s infinite;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image-block {
+    margin: 10px;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    width: 200px;
+}
+.image-block img {
+    width: 100%;
+    border-radius: 10px;
+}
+.image-block p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+/* Sample animations */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+.anim1 { animation: fireworks 2s infinite; }
+.anim2 { animation: balloons 3s infinite; }
+.anim3 { animation: shake 1s infinite; }
+.anim4 { animation: fadeIn 2s ease-in-out; }
+.anim5 { animation: pulse 2s infinite; }
+
+@keyframes fireworks {
+    0% { background-color: #ffeb3b; }
+    50% { background-color: #f44336; }
+    100% { background-color: #ffeb3b; }
+}
+@keyframes balloons {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
